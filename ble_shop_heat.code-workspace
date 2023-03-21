@@ -1,0 +1,83 @@
+{
+	"folders": [
+    {
+      "path": "../../../Arduino/Sketches/libraries/GrosJambon-1.0.0"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "../../nRF5_SDK_12.3.0_d7731ad/components"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "ios": "cpp",
+      "functional": "cpp",
+      "__bit_reference": "cpp",
+      "__functional_base": "cpp",
+      "__node_handle": "cpp",
+      "algorithm": "cpp",
+      "atomic": "cpp",
+      "bitset": "cpp",
+      "chrono": "cpp",
+      "__memory": "cpp",
+      "iterator": "cpp",
+      "limits": "cpp",
+      "locale": "cpp",
+      "memory": "cpp",
+      "optional": "cpp",
+      "ratio": "cpp",
+      "system_error": "cpp",
+      "tuple": "cpp",
+      "type_traits": "cpp",
+      "vector": "cpp",
+      "typeinfo": "cpp",
+      "__config": "cpp",
+      "__debug": "cpp",
+      "__errc": "cpp",
+      "__hash_table": "cpp",
+      "__locale": "cpp",
+      "__mutex_base": "cpp",
+      "__nullptr": "cpp",
+      "__split_buffer": "cpp",
+      "__string": "cpp",
+      "__threading_support": "cpp",
+      "__tuple": "cpp",
+      "array": "cpp",
+      "bit": "cpp",
+      "cctype": "cpp",
+      "cmath": "cpp",
+      "complex": "cpp",
+      "cstdarg": "cpp",
+      "cstddef": "cpp",
+      "cstdint": "cpp",
+      "cstdio": "cpp",
+      "cstdlib": "cpp",
+      "cstring": "cpp",
+      "ctime": "cpp",
+      "cwchar": "cpp",
+      "cwctype": "cpp",
+      "exception": "cpp",
+      "initializer_list": "cpp",
+      "iosfwd": "cpp",
+      "istream": "cpp",
+      "mutex": "cpp",
+      "new": "cpp",
+      "ostream": "cpp",
+      "sstream": "cpp",
+      "stdexcept": "cpp",
+      "streambuf": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "unordered_map": "cpp",
+      "utility": "cpp",
+      "nrf_peripherals.h": "c"
+    },
+    "C_Cpp.default.defines": [
+      "APP_PWM_ENABLED=1",
+      "NRF51",
+      "GJ_NORDIC_BLE"
+    ]
+  }
+}

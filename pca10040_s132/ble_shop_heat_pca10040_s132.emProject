@@ -1,0 +1,202 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="ble_shop_heat_pca10040_s132" target="8" version="2">
+  <project Name="ble_shop_heat_pca10040_s132">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="8192"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="8192"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_simulator_memory_simulation_parameter="RWX 00000000,00100000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
+      arm_target_device_name="nRF52832_xxAA"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="NRF;NRF_SDK13;BLE_STACK_SUPPORT_REQD;BOARD_PCA10040;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52;NRF52832;NRF52832_XXAA;NRF52_PAN_74;NRF_SD_BLE_API_VERSION=3;S132;SOFTDEVICE_PRESENT"
+      c_user_include_directories="$(GJ_PATH);../../../config;$(NRF_SDK12_PATH)/components;$(NRF_SDK12_PATH)/components/ble/ble_advertising;$(NRF_SDK12_PATH)/components/ble/ble_dtm;$(NRF_SDK12_PATH)/components/ble/ble_racp;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_ancs_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_ans_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_bas;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_bas_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_cscs;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_cts_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_dfu;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_dis;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_gls;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_hids;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_hrs;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_hrs_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_hts;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_ias;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_ias_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_lbs;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_lbs_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_lls;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_nus;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_nus_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_rscs;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_rscs_c;$(NRF_SDK12_PATH)/components/ble/ble_services/ble_tps;$(NRF_SDK12_PATH)/components/ble/common;$(NRF_SDK12_PATH)/components/ble/nrf_ble_gatt;$(NRF_SDK12_PATH)/components/ble/nrf_ble_qwr;$(NRF_SDK12_PATH)/components/ble/peer_manager;$(NRF_SDK12_PATH)/components/boards;$(NRF_SDK12_PATH)/components/device;$(NRF_SDK12_PATH)/components/drivers_nrf/common;$(NRF_SDK12_PATH)/components/drivers_nrf/hal;$(NRF_SDK12_PATH)/components/drivers_nrf/delay;$(NRF_SDK12_PATH)/components/drivers_nrf/clock;$(NRF_SDK12_PATH)/components/drivers_nrf/gpiote;$(NRF_SDK12_PATH)/components/drivers_nrf/timer;$(NRF_SDK12_PATH)/components/drivers_nrf/ppi;$(NRF_SDK12_PATH)/components/drivers_nrf/saadc;$(NRF_SDK12_PATH)/components/drivers_nrf/pwm/;$(NRF_SDK12_PATH)/components/libraries/atomic;$(NRF_SDK12_PATH)/components/libraries/atomic_fifo;$(NRF_SDK12_PATH)/components/libraries/atomic_flags;$(NRF_SDK12_PATH)/components/libraries/balloc;$(NRF_SDK12_PATH)/components/libraries/bootloader/dfu;$(NRF_SDK12_PATH)/components/libraries/bootloader/ble_dfu;$(NRF_SDK12_PATH)/components/libraries/bsp;$(NRF_SDK12_PATH)/components/libraries/button;$(NRF_SDK12_PATH)/components/libraries/cli;$(NRF_SDK12_PATH)/components/libraries/crc16;$(NRF_SDK12_PATH)/components/libraries/crc32;$(NRF_SDK12_PATH)/components/libraries/crypto;$(NRF_SDK12_PATH)/components/libraries/csense;$(NRF_SDK12_PATH)/components/libraries/csense_drv;$(NRF_SDK12_PATH)/components/libraries/delay;$(NRF_SDK12_PATH)/components/libraries/ecc;$(NRF_SDK12_PATH)/components/libraries/experimental_section_vars;$(NRF_SDK12_PATH)/components/libraries/experimental_task_manager;$(NRF_SDK12_PATH)/components/libraries/fds;$(NRF_SDK12_PATH)/components/libraries/fstorage;$(NRF_SDK12_PATH)/components/libraries/gfx;$(NRF_SDK12_PATH)/components/libraries/gpiote;$(NRF_SDK12_PATH)/components/libraries/hardfault;$(NRF_SDK12_PATH)/components/libraries/hci;$(NRF_SDK12_PATH)/components/libraries/led_softblink;$(NRF_SDK12_PATH)/components/libraries/log;$(NRF_SDK12_PATH)/components/libraries/log/src;$(NRF_SDK12_PATH)/components/libraries/low_power_pwm;$(NRF_SDK12_PATH)/components/libraries/mem_manager;$(NRF_SDK12_PATH)/components/libraries/memobj;$(NRF_SDK12_PATH)/components/libraries/mpu;$(NRF_SDK12_PATH)/components/libraries/mutex;$(NRF_SDK12_PATH)/components/libraries/pwm;$(NRF_SDK12_PATH)/components/libraries/pwr_mgmt;$(NRF_SDK12_PATH)/components/libraries/queue;$(NRF_SDK12_PATH)/components/libraries/ringbuf;$(NRF_SDK12_PATH)/components/libraries/scheduler;$(NRF_SDK12_PATH)/components/libraries/sdcard;$(NRF_SDK12_PATH)/components/libraries/sensorsim;$(NRF_SDK12_PATH)/components/libraries/slip;$(NRF_SDK12_PATH)/components/libraries/sortlist;$(NRF_SDK12_PATH)/components/libraries/spi_mngr;$(NRF_SDK12_PATH)/components/libraries/stack_guard;$(NRF_SDK12_PATH)/components/libraries/strerror;$(NRF_SDK12_PATH)/components/libraries/svc;$(NRF_SDK12_PATH)/components/libraries/timer;$(NRF_SDK12_PATH)/components/libraries/twi_mngr;$(NRF_SDK12_PATH)/components/libraries/twi_sensor;$(NRF_SDK12_PATH)/components/libraries/usbd;$(NRF_SDK12_PATH)/components/libraries/usbd/class/audio;$(NRF_SDK12_PATH)/components/libraries/usbd/class/cdc;$(NRF_SDK12_PATH)/components/libraries/usbd/class/cdc/acm;$(NRF_SDK12_PATH)/components/libraries/usbd/class/hid;$(NRF_SDK12_PATH)/components/libraries/usbd/class/hid/generic;$(NRF_SDK12_PATH)/components/libraries/usbd/class/hid/kbd;$(NRF_SDK12_PATH)/components/libraries/usbd/class/hid/mouse;$(NRF_SDK12_PATH)/components/libraries/usbd/class/msc;$(NRF_SDK12_PATH)/components/libraries/util;$(NRF_SDK12_PATH)/components/nfc/ndef/conn_hand_parser;$(NRF_SDK12_PATH)/components/nfc/ndef/conn_hand_parser/ac_rec_parser;$(NRF_SDK12_PATH)/components/nfc/ndef/conn_hand_parser/ble_oob_advdata_parser;$(NRF_SDK12_PATH)/components/nfc/ndef/conn_hand_parser/le_oob_rec_parser;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/ac_rec;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/ble_oob_advdata;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/ble_pair_lib;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/ble_pair_msg;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/common;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/ep_oob_rec;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/hs_rec;$(NRF_SDK12_PATH)/components/nfc/ndef/connection_handover/le_oob_rec;$(NRF_SDK12_PATH)/components/nfc/ndef/generic/message;$(NRF_SDK12_PATH)/components/nfc/ndef/generic/record;$(NRF_SDK12_PATH)/components/nfc/ndef/launchapp;$(NRF_SDK12_PATH)/components/nfc/ndef/parser/message;$(NRF_SDK12_PATH)/components/nfc/ndef/parser/record;$(NRF_SDK12_PATH)/components/nfc/ndef/text;$(NRF_SDK12_PATH)/components/nfc/ndef/uri;$(NRF_SDK12_PATH)/components/nfc/platform;$(NRF_SDK12_PATH)/components/nfc/t2t_lib;$(NRF_SDK12_PATH)/components/nfc/t2t_parser;$(NRF_SDK12_PATH)/components/nfc/t4t_lib;$(NRF_SDK12_PATH)/components/nfc/t4t_parser/apdu;$(NRF_SDK12_PATH)/components/nfc/t4t_parser/cc_file;$(NRF_SDK12_PATH)/components/nfc/t4t_parser/hl_detection_procedure;$(NRF_SDK12_PATH)/components/nfc/t4t_parser/tlv;$(NRF_SDK12_PATH)/components/softdevice/common;$(NRF_SDK12_PATH)/components/softdevice/common/softdevice_handler;$(NRF_SDK12_PATH)/components/softdevice/s132/headers;$(NRF_SDK12_PATH)/components/softdevice/s132/headers/nrf52;$(NRF_SDK12_PATH)/components/toolchain/cmsis/include;$(NRF_SDK12_PATH)/components/toolchain;$(NRF_SDK12_PATH)/external/fprintf;$(StudioDir)/include/rtt;$(NRF_SDK12_PATH)/external/segger_rtt;$(NRF_SDK12_PATH)/external/utf_converter;$(NRF_SDK12_PATH)/integration/nrfx;$(NRF_SDK12_PATH)/integration/nrfx/legacy;$(NRF_SDK12_PATH)/modules/nrfx;$(NRF_SDK12_PATH)/modules/nrfx/drivers/include;$(NRF_SDK12_PATH)/modules/nrfx/hal;$(NRF_SDK12_PATH)/modules/nrfx/mdk;../../../custom_ble_services/ble_nps;../config"
+      debug_additional_load_file="$(NRF_SDK12_PATH)/components/softdevice/s132/hex/s132_nrf52_3.0.0_softdevice.hex"
+      debug_additional_load_file1="/Users/michelvachon/Documents/nordic/projects/ble_shop_heat/boot_parta.bin"
+      debug_additional_load_file2="/Users/michelvachon/Documents/nordic/projects/gjboot/pca10040/Output/Release/Exe/gjboot_pca10040_s132.bin"
+      debug_additional_load_file_address1="0x7b000"
+      debug_additional_load_file_address2="0x1f000"
+      debug_initial_breakpoint_set_option="Never"
+      debug_register_definition_file="$(NRF_SDK12_PATH)/modules/nrfx/mdk/nrf52.svd"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      gcc_cplusplus_language_standard="gnu++17"
+      gcc_debugging_level="Level 3"
+      gcc_entry_point="Reset_Handler"
+      libcxx="Yes (No Exceptions)"
+      linker_output_format="bin"
+      linker_printf_fmt_level="long"
+      linker_printf_width_precision_supported="Yes"
+      linker_scanf_fmt_level="long"
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x80000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x10000;FLASH_START=0x20000;FLASH_SIZE=0x40000;RAM_START=0x20002150;RAM_SIZE=0xdd90"
+      linker_section_placements_segments="FLASH RX 0x0 0x80000;RAM RWX 0x20000000 0x10000"
+      macros="CMSIS_CONFIG_TOOL=$(NRF_SDK12_PATH)/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Segger Startup Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="GJ">
+      <file file_name="$(GJ_PATH)/gj/base.cpp" />
+      <file file_name="$(GJ_PATH)/gj/serial.cpp" />
+      <file file_name="$(GJ_PATH)/gj/commands.cpp" />
+      <file file_name="$(GJ_PATH)/gj/config.cpp" />
+      <file file_name="$(GJ_PATH)/gj/crc.cpp" />
+      <file file_name="$(GJ_PATH)/gj/appendonlyfile.cpp" />
+      <file file_name="$(GJ_PATH)/gj/profiling.cpp" />
+      <file file_name="$(GJ_PATH)/gj/string.cpp" />
+      <file file_name="$(GJ_PATH)/gj/stringview.cpp" />
+      <file file_name="$(GJ_PATH)/gj/file.cpp" />
+      <file file_name="$(GJ_PATH)/gj/esputils.cpp" />
+      <file file_name="$(GJ_PATH)/gj/gjbleserver_nordic.cpp" />
+      <file file_name="$(GJ_PATH)/gj/debugloc.cpp" />
+      <file file_name="$(GJ_PATH)/gj/datetime.cpp" />
+      <file file_name="$(GJ_PATH)/gj/eventmanager.cpp" />
+      <file file_name="$(GJ_PATH)/gj/gjota.cpp" />
+      <file file_name="$(GJ_PATH)/gj/nrf51utils.cpp" />
+      <file file_name="$(GJ_PATH)/gj/platform.cpp">
+        <configuration Name="Release" gcc_optimization_level="Level 0" />
+      </file>
+      <file file_name="$(GJ_PATH)/gj/sensor.cpp" />
+      <file file_name="$(GJ_PATH)/gj/printmem.cpp" />
+      <file file_name="$(GJ_PATH)/gj/gjlock.cpp" />
+      <file file_name="$(GJ_PATH)/gj/utils.cpp" />
+    </folder>
+    <folder Name="nRF_Log">
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/log/src/nrf_log_backend_serial.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/log/src/nrf_log_frontend.c" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/pwm/app_pwm.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/button/app_button.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/app_error.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/app_error_weak.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/fifo/app_fifo.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/timer/app_timer.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/uart/app_uart_fifo.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/app_util_platform.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/fstorage/fstorage.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/hardfault/hardfault_implementation.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/nrf_assert.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/uart/retarget.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/sdk_errors.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/scheduler/app_scheduler.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/timer/app_timer_appsh.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bootloader/nrf_bootloader.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bootloader/nrf_bootloader_app_start.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bootloader/nrf_bootloader_info.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bootloader/dfu/nrf_dfu_mbr.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/fds/fds.c" />
+    </folder>
+    <folder Name="None">
+      <file file_name="$(NRF_SDK12_PATH)/components/toolchain/ses/ses_nRF_Startup.s" />
+      <file file_name="$(NRF_SDK12_PATH)/components/toolchain/ses/ses_nrf52_Vectors.s" />
+      <file file_name="$(NRF_SDK12_PATH)/components/toolchain/system_nrf52.c" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="$(NRF_SDK12_PATH)/components/boards/boards.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/clock/nrf_drv_clock.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/common/nrf_drv_common.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/gpiote/nrf_drv_gpiote.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/uart/nrf_drv_uart.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/saadc/nrf_drv_saadc.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/ppi/nrf_drv_ppi.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/pwm/nrf_drv_pwm.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/timer/nrf_drv_timer.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/hal/nrf_nvmc.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/drivers_nrf/hal/nrf_saadc.c" />
+    </folder>
+    <folder Name="Board Support">
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bsp/bsp.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/bsp/bsp_btn_ble.c" />
+    </folder>
+    <folder Name="Application">
+      <file file_name="./../config/sdk_config.h" />
+      <file file_name="../main.cpp" />
+      <file file_name="../pwm.c" />
+      <file file_name="../servo.cpp" />
+      <file file_name="../adc.cpp" />
+      <file file_name="../readwriteints.cpp" />
+    </folder>
+    <folder Name="nRF_Segger_RTT">
+      <file file_name="$(StudioDir)/samples/SEGGER_RTT_printf.c" />
+      <file file_name="$(StudioDir)/samples/SEGGER_RTT_Syscalls_SES.c" />
+      <file file_name="$(StudioDir)/samples/SEGGER_RTT.c" />
+    </folder>
+    <folder Name="nRF_BLE">
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/common/ble_advdata.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/ble_advertising/ble_advertising.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/common/ble_conn_params.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/common/ble_srv_common.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/peer_manager.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/common/ble_conn_state.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/gatt_cache_manager.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/gatts_cache_manager.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/id_manager.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/peer_data_storage.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/peer_data.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/peer_database.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/peer_id.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/pm_buffer.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/pm_mutex.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/security_dispatcher.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/ble/peer_manager/security_manager.c" />
+      <file file_name="$(NRF_SDK12_PATH)/components/libraries/util/sdk_mapped_flags.c" />
+    </folder>
+    <folder Name="nRF_SoftDevice">
+      <file file_name="$(NRF_SDK12_PATH)/components/softdevice/common/softdevice_handler/softdevice_handler.c" />
+    </folder>
+    <configuration
+      Name="Release"
+      external_debug_symbols_file_name="/Users/michelvachon/Documents/nordic/projects/gjboot/pca10040/Output/Release/Exe/gjboot_pca10040_s132.elf"
+      external_debug_symbols_load_address="0x0"
+      linker_output_format="bin" />
+    <configuration
+      Name="ReleasePartitionA"
+      build_object_file_name="$(IntDir)/$(InputName)$(OBJ)"
+      build_output_file_name="$(OutDir)/$(ProjectName)_pa$(EXE)"
+      debug_RTTCB="_SEGGER_RTT"
+      debug_additional_load_file2="/Users/michelvachon/Documents/nordic/projects/gjboot/pca10040/Output/Release/Exe/gjboot_pca10040_s132.bin"
+      external_debug_symbols_file_name="/Users/michelvachon/Documents/nordic/projects/gjboot/pca10040/Output/Release/Exe/gjboot_pca10040_s132.elf"
+      external_debug_symbols_load_address="0"
+      gcc_debugging_level="Level 3"
+      gcc_dwarf_version="dwarf-4"
+      gcc_optimization_level="Level 2 for size"
+      linker_output_format="bin"
+      post_build_command="cp $(OutDir)/$(ProjectName)_pa.bin $(ProjectDir)/../bins/pca10040/" />
+    <configuration
+      Name="ReleasePartitionB"
+      build_object_file_name="$(IntDir)/$(InputName)$(OBJ)"
+      build_output_file_name="$(OutDir)/$(ProjectName)_pb$(EXE)"
+      debug_RTTCB="_SEGGER_RTT"
+      debug_additional_load_file1="/Users/michelvachon/Documents/nordic/projects/ble_shop_heat/boot_partb.bin"
+      external_debug_symbols_file_name="/Users/michelvachon/Documents/nordic/projects/gjboot/pca10040/Output/Release/Exe/gjboot_pca10040_s132.elf"
+      external_debug_symbols_load_address="0"
+      gcc_debugging_level="Level 3"
+      gcc_dwarf_version="dwarf-4"
+      gcc_optimization_level="Level 2 for size"
+      linker_output_format="bin"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x80000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x10000;FLASH_START=0x40000;FLASH_SIZE=0x20000;RAM_START=0x20002150;RAM_SIZE=0x2000"
+      post_build_command="cp $(OutDir)/$(ProjectName)_pb.bin $(ProjectDir)/../bins/pca10040/" />
+  </project>
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_optimization_level="Optimize For Size" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    gcc_optimization_level="None" />
+  <configuration Name="ReleasePartitionA" />
+  <configuration Name="ReleasePartitionB" />
+  <import file_name="../../gjboot/pca10040/gjboot_pca10040_s132.emProject" />
+</solution>
