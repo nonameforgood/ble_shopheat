@@ -30,3 +30,14 @@
 *.exe
 *.out
 *.app
+
+#SEGGER studio files
+*.emSession
+*.jlink
+
+#MAC OS
+.DS_Store
+
+#other
+bins/
+Output/
